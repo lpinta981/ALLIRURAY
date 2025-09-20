@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alli Ruray - El Buen Hacer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botón menú principal desktop (solo PC) -->
+    <a href="dashboard.html" class="menu-desktop-btn bg-[#8B4513] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-opacity-80 flex items-center space-x-2">
+        <span style="margin-right: 8px;">🏠</span>
+        <span>Menú principal</span>
+    </a>
+
+    <!-- Botón menú principal móvil (solo móvil, esquina inferior derecha, arriba del carrito) -->
+    <a href="dashboard.html" class="menu-movil-btn bg-[#8B4513] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-opacity-80 flex items-center space-x-2">
+        <span style="margin-right: 8px;">🏠</span>
+        <span>Menú principal</span>
+    </a>
+
+        <style>
+            /* Ajuste para que el botón móvil esté siempre arriba de cualquier barra inferior */
+            @media (max-width: 767px) {
+                .menu-movil-btn {
+                    position: fixed;
+                    bottom: 96px !important;
+                    right: 16px !important;
+                    z-index: 50;
+                    display: flex;
+                }
+            }
+            @media (min-width: 768px) {
+                .menu-movil-btn {
+                    display: none !important;
+                }
+            }
+            .menu-desktop-btn {
+                display: none;
+            }
+            @media (min-width: 768px) {
+                .menu-desktop-btn {
+                    display: flex !important;
+                    position: fixed;
+                    top: 44px;
+                    right: 16px;
+                    z-index: 50;
+                }
+            }
+        </style>
+    <header class="hidden">
+        <div class="logo">
+            <img src="LOGO.png" alt="Alli Ruray Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#filosofia">Filosofía</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#compromiso">Compromiso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="welcome-container">
+            <div class="hero-text">
+                <h1>Alli Ruray</h1>
+                <p>Alli Ruray es una filosofía de 'el buen hacer', ubicada en Machachi, comprometida con la ética, la comunidad y la naturaleza.</p>
+                <p>Haz clic en 'Ver video' y empieza la aventura.</p>
+            </div>
+            <button id="ver-video-btn">Ver video</button>
+        </div>
+    </section>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <div class="card">
+                <div class="front">
+                    <span class="close">&times;</span>
+                    <video id="modal-video" controls>
+                        <source src="VIDEO.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="back">
+                    <h2>BIENVENIDO A NUESTRO RINCON</h2>
+                    <button id="start-btn">Empezar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="start-btn" style="display:none;">Empezar</button>
+
+
+    <section id="filosofia" class="hidden">
+        <h2>Nuestra Filosofía</h2>
+        <p>"Alli Ruray" no es solo un eslogan, es una filosofía que significa "el buen hacer" o "la acción correcta". No se trata únicamente del producto final, sino de todo el proceso: ética en la creación, armonía con la comunidad y la naturaleza (Pachamama), y un enfoque holístico que abarca el bienestar social, ecológico y personal.</p>
+        <p>La web no vende solo un producto, cuenta la historia de una promesa cumplida: "Hecho con valor, no solo con calidad". Cada pieza es una acción en armonía con nuestra comunidad y la tierra, comprometida con el Buen Vivir (Sumak Kawsay).</p>
+    </section>
+
+    <section id="proceso" class="hidden">
+        <h2>El Proceso</h2>
+        <p>Un recorrido visual desde la materia prima hasta el producto final, destacando la ética en cada paso. Mostramos las manos que crean, los rostros de los artesanos con dignidad, y las materias primas en su entorno natural. La autenticidad sobre la perfección: fotos reales, con luz natural, conectando el producto con la comunidad y el paisaje andino.</p>
+    </section>
+
+    <section id="comunidad" class="hidden">
+        <h2>Nuestra Comunidad</h2>
+        <p>Presentamos a las personas detrás del producto, compartiendo sus historias y el impacto positivo de la iniciativa. Con permiso y dignidad, mostramos los rostros de los artesanos, conectando con la comunidad andina.</p>
+    </section>
+
+    <section id="tienda" class="hidden">
+        <h2>Tienda</h2>
+        <p>Cada producto tiene una descripción que habla no solo de sus características, sino de su historia y valor cultural. Más que un producto, un compromiso con el Buen Vivir.</p>
+    </section>
+
+    <section id="compromiso" class="hidden">
+        <h2>Nuestro Compromiso</h2>
+        <p>Transparencia sobre el impacto ecológico y social. Comprometidos con el Sumak Kawsay, evitando la apropiación cultural. Una celebración respetuosa de la autenticidad andina.</p>
+    </section>
+
+    <footer class="hidden">
+        <p>&copy; 2025 Alli Ruray. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Moderno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #4B4453;
+            background-color: #F7F5F2;
+        }
+        .header-bg {
+            background-color: #795548;
+            background-image: url('DASHBOARD.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .header-text {
+            font-family: 'Poppins', sans-serif;
+        }
+        .dot {
+            transition: background-color 0.6s ease;
+        }
+        .button {
+            transition: transform 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-[#F7F5F2] flex flex-col min-h-screen">
+
+    <!-- Encabezado con imagen de fondo y texto -->
+    <div class="relative w-full h-56 md:h-40 flex flex-col md:flex-row items-center justify-center text-center p-4 header-bg bg-brown-700 flex-shrink-0">
+        <div class="w-20 h-20 md:w-[15%] md:h-auto absolute top-0 left-1/2 -translate-x-1/2 md:left-4 md:top-4 md:translate-x-0 md:z-50">
+            <img src="LOGO.png" alt="Logo" class="rounded-full border-4 border-white shadow-lg w-full h-full object-cover">
+        </div>
+        <div class="text-white p-6 rounded-lg bg-black bg-opacity-40 w-full md:ml-[17%] md:pl-0 mt-8 md:mt-0 order-2 md:order-1">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold header-text">
+                MUY BIEN, YA ESTÁS AQUÍ, DIME... ¿QUÉ QUIERES CONOCER DE NOSOTROS?
+            </h1>
+        </div>
+    </div>
+
+    <!-- Cuerpo con galería de imágenes -->
+    <div class="relative flex-1 bg-[#F7F5F2] flex justify-center items-center">
+        <!-- Galería de imágenes -->
+        <div class="flex flex-wrap justify-center gap-2 md:gap-4 p-2 md:p-4">
+            <div class="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/6">
+                <div class="overflow-hidden aspect-[3/4] rounded-t-lg">
+                    <img src="5.png" alt="Quienes somos" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 text-center">
+                    <h3 class="text-lg font-bold text-[#4B4453] mb-2">Quienes somos</h3>
+                </div>
+                <div class="p-2 text-center">
+                    <a href="Quiensomos.html" class="bg-[#4B4453] text-white px-4 py-2 rounded-lg hover:bg-opacity-80">Ver historia</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/6">
+                <div class="overflow-hidden aspect-[3/4] rounded-t-lg">
+                    <img src="6.png" alt="Nuestras creaciones" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 text-center">
+                    <h3 class="text-lg font-bold text-[#4B4453] mb-2">Nuestras creaciones</h3>
+                </div>
+                <div class="p-2 text-center">
+                    <a href="productos.html" class="bg-[#4B4453] text-white px-4 py-2 rounded-lg hover:bg-opacity-80">Ver productos</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/6">
+                <div class="overflow-hidden aspect-[3/4] rounded-t-lg">
+                    <img src="7.png" alt="Nuestro Equipo" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 text-center">
+                    <h3 class="text-lg font-bold text-[#4B4453] mb-2">Nuestro Equipo</h3>
+                </div>
+                <div class="p-2 text-center">
+                    <a href="Equipo.html" class="bg-[#4B4453] text-white px-4 py-2 rounded-lg hover:bg-opacity-80">Conocer equipo</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/6">
+                <div class="overflow-hidden aspect-[3/4] rounded-t-lg">
+                    <img src="8.png" alt="Contacto" class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 text-center">
+                    <h3 class="text-lg font-bold text-[#4B4453] mb-2">Contacto</h3>
+                </div>
+                <div class="p-2 text-center">
+                    <a href="contacto.html" class="bg-[#4B4453] text-white px-4 py-2 rounded-lg hover:bg-opacity-80">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('DASHBOARD.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(139, 69, 19, 0.7); /* Color café más oscuro con buena opacidad */
+    border-bottom: 5px solid white;
+}
+
+.header img {
+    height: 100%; /* Más grande, ocupa 100% de la altura del header */
+}
+
+.header p {
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    text-align: right;
+    flex: 1;
+    margin-left: 20px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.black-band {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    background-color: rgba(0, 100, 0, 0.7); /* Verde oscuro con 70% opacidad */
+    border-top: 5px solid white;
+}
+
+.slider {
+    display: flex;
+    gap: 2vh;
+    width: calc(80 * 35vh * 9 / 16 + 79 * 2vh); /* Width for 80 images + 79 gaps at 9:16 aspect ratio */
+    animation: slide 10s linear infinite;
+}
+
+.slider img {
+    width: calc(35vh * 9 / 16);
+    height: 35vh;
+    object-fit: cover;
+    aspect-ratio: 9 / 16;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-5%);
+    }
+}

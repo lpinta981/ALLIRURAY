@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Alli Ruray</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #4B4453;
+            background-color: #F7F5F2;
+        }
+        .header-bg {
+            background-color: #795548;
+            background-image: url('DASHBOARD.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .header-text {
+            font-family: 'Poppins', sans-serif;
+        }
+            </style>
+            <style>
+                /* Ajuste para que el botón móvil esté siempre arriba de cualquier barra inferior */
+                @media (max-width: 767px) {
+                    .menu-movil-btn {
+                        bottom: 96px !important;
+                        right: 16px !important;
+                        z-index: 50;
+                    }
+                }
+            </style>
+</head>
+<body class="bg-[#F7F5F2]">
+
+    <!-- Botón menú principal desktop (solo PC) -->
+    <a href="dashboard.html" class="fixed top-11 right-4 bg-[#8B4513] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-opacity-80 flex items-center space-x-2 z-50 hidden md:flex">
+        <i class="fas fa-home"></i>
+        <span>Menú principal</span>
+    </a>
+
+    <!-- Botón menú principal móvil (solo móvil, esquina inferior derecha, arriba del carrito) -->
+    <a href="dashboard.html" class="fixed menu-movil-btn bg-[#8B4513] text-white px-4 py-2 rounded-lg shadow-lg hover:bg-opacity-80 flex items-center space-x-2 z-50 md:hidden">
+        <i class="fas fa-home"></i>
+        <span>Menú principal</span>
+    </a>
+
+    <!-- Encabezado -->
+    <div class="relative w-full h-32 flex items-center justify-center text-center p-4 header-bg bg-brown-700">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 text-white p-6 rounded-lg bg-black bg-opacity-40">
+            <h1 class="text-2xl md:text-4xl font-bold header-text">Quiénes Somos</h1>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="max-w-4xl mx-auto p-8">
+        <h2 class="text-3xl font-bold text-[#4B4453] mb-6">Nuestra Esencia: ¿Qué es Alli Ruray?</h2>
+        <p class="text-lg mb-6">
+            Alli Ruray es más que un nombre; es nuestra brújula y nuestro destino. Nacido del Kichwa, su significado —"el buen hacer" o "la acción correcta"— es la promesa que impregna todo lo que creamos. No somos una empresa que nació en una sala de juntas, sino en los senderos que serpentean las montañas y en el silencio respetuoso de los valles andinos.
+        </p>
+        <p class="text-lg mb-6">
+            Nuestra misión es simple y profunda: escuchar a la Tierra. Creemos que la verdadera innovación no viene de la tecnología, sino de la atención. Salimos al mundo con los sentidos abiertos para aprender del lenguaje del viento, de la geometría perfecta de una flor silvestre y de la resiliencia de la roca moldeada por el río. La naturaleza es nuestra maestra, y sus lecciones de equilibrio, armonía y belleza son la base de cada uno de nuestros diseños.
+        </p>
+        <p class="text-lg mb-6">
+            Por eso, no creamos simplemente productos. Materializamos historias. Cada pieza que sale de nuestro taller es un fragmento de ese diálogo con el entorno, un eco de la montaña y un susurro del páramo. Nuestro compromiso es ofrecer creaciones que no solo estén bien hechas en su forma, sino que sean correctas en su fondo: respetuosas con su origen, justas con sus creadores y armónicas con el mundo al que pertenecen.
+        </p>
+        <p class="text-lg mb-6">
+            Elegir Alli Ruray es una invitación a valorar no solo la calidad, sino la coherencia. Es llevar contigo una pieza de un mundo en equilibrio.
+        </p>
+    </div>
+
+</body>
+</html>
